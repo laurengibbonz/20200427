@@ -33,7 +33,7 @@ export default class ContactList extends Component {
     }
 
     deleteContact(id) {
-        axios.get('http://localhost:3000/contacts/delete/'+id)
+        axios.get('/contacts/delete/'+id)
           .then(response => { 
               console.log(response.data)
            })
